@@ -1,0 +1,128 @@
+<!--Left Column-->
+<div id="content-left" class="medium-12 columns">
+<t4 type="meta" meta="html_anchor" />
+  
+<h1><t4 type="content" name="Main Page Heading" output="normal" modifiers="striptags"  /></h1>
+<t4 type="content" name="Main Page Body Before Calendar" output="normal" modifiers="medialibrary, nav_sections"  />
+
+<h4>Search Funds</h4>
+<form id="search_funds" action="#">
+<input type="text" id="funds">
+</form>
+<ul id="funds_list"></ul>
+<h4>Areas of Greatest Need</h4>
+<form id="research_form">
+<select id="research_select">
+  <option selected="selected" value = "0">Please Select</option>
+  <option value = '<li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=017147&appealcode=GSG6O">IFAS Florida Excellence Endowment</a></li>'>IFAS Florida Excellence Endowment</option>
+  <option value = '<li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=017971&appealcode=GSG6O">College of Agricultural and Life Sciences</a></li>'>College of Agricultural and Life Sciences</option>
+  <option value = '<li><a href="https://www.uff.ufl.edu/onlinegiving/FundDetail.asp?FundCode=003287&appealcode=GSG6O">IFAS Extension</a></li>'>IFAS Extension</option>
+  <option value = '<li><a href="https://www.uff.ufl.edu/onlinegiving/FundDetail.asp?FundCode=003283&AppealCode=GSG6O">IFAS Research</a></li>'>IFAS Research</option>
+  <option value = '' disabled>----Research and Education Centers----</option>
+  <option value = '<li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=000999&appealcode=GSG6O">Lake Alfred Citrus Research and Education Center General Fund</a></li>
+  				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=001767&appealcode=GSG6O">Charles M. Shinn, Jr. Endowment for Citrus Research</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=003145&appealcode=GSG6O">Hunt Bros Endowment for Fellowship in Citrus Research & Education Lake Alfred</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=016459&appealcode=GSG6O">Edwin Moore Graduate Assistant Scholarship Endowment</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=018747&appealcode=GSG6O">Marjorie G. Riley Citrus Research Endowment</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=018807&appealcode=GSG6O">C.D. Hughes and Sons Research Endowment</a></li>'>Citrus REC (Lake Alfred)</option>
+                     
+  <option value = '<li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=000057&appealcode=GSG6O">Everglades Research and Education Center General Fund</a></li>
+  				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=004367&appealcode=GSG6O">Wedgworth Graduate Fellowship Endowment</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=004577&appealcode=GSG6O">Homer and Dolly Hand Fellowship Fund</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=006931&appealcode=GSG6O">Frances R. and Homer J. Hand EREC Endowment</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=013883&appealcode=GSG6O">Emeritus Faculty Research Endowment at the Everglades Research & Education Center -Belle Glade</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=018787&appealcode=GSG60">EREC Faculty Fund</a></li>'>Everglades REC (Belle Glade)</option>
+                     
+  <option value = '<li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=001191">Ft. Lauderdale Research and Education Center  General Fund</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=006127&appealcode=GSG6O ">Calvin L. Korf Turfgrass Research Fund</a></li>'>Fort Lauderdale REC</option>
+                     
+  <option value = '<li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=001181&appealcode=GSG6O">Gulf Coast Research and Education Center General Fund</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=013701&appealcode=GSG6O">GCREC Scholarship Endowment</a></li>'>Gulf Coast REC (Balm)</option>
+                     
+  <option value = '<li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=001183&appealcode=GSG6O">Indian River Research and Education Center General Fund</a></li>
+  				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=018115&appealcode=GSG6O">Indian River Research Education Center Academic Research Enhancement Endowment</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=018677&appealcode=GSG6O">Robert S. Varn IRREC Enhancement Endowment</a></li>'>Indian River REC (Ft. Pierce)</option>
+				   
+  <option value = '<li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=001061&appealcode=GSG6O">Mid-Florida Research and Education Center General Fund</a></li>
+  				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=016211&appealcode=GSG6O">Innovation Propagation and Production Training Endowment</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=016247&appealcode=GSG6O">FNGLA-Action Chapter MREC Excellence Endowment</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=017139&appealcode=GSG6O">Dewar Nurseries Mid-Florida Excellence Endowment</a></li>'>Mid-Florida REC (Apopka)</option>
+  
+  <option value = '<li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=001175&appealcode=GSG6O">North Florida Research and Education Center Excellence Fund</a></li>
+  				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=005181&appealcode=GSG6O">Donald F. May Endowment for Ornamental Research</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=008945&appealcode=GSG6O">Fountain H. May, Sr. Scholarship/Fellowship Fund</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=017813&appealcode=GSG6O">Sam Calhoun Fleming Fellowship</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=017075&appealcode=GSG60">North Florida Research and Education Center Gardens of the Big Bend</a></li>'>North Florida REC (Marianna, Quincy)</option>
+				   
+  <option value = '<li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=001083&appealcode=GSG6O">Range Cattle Research and Education Center General Fund</a></li>
+  				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=016155&appealcode=GSG6O">Florida Cattlemens Endowment</a></li>'>Range Cattle REC (Ona)</option>
+				   
+  <option value = '<li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=002105&appealcode=GSG6O">Southwest Florida Research and Education Center General Fund</a></li>
+  				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=002105&appealcode=GSG6O">Southwest Florida Research and Education Center at Immokalee</a></li>'>Southwest Florida REC (Immokalee)</option>
+				   
+  <option value = '<li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=000557&appealcode=GSG6O">Tropical Research and Education Center General Fund</a></li>
+  				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=019413&appealcode=GSG6O">Tropical Research and Education Center Excellence Fund</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=011013&appealcode=GSG6O">Emil and Charlotte Gross Endowment</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=012335&appealcode=GSG6O">Florida Mango Forum Endowment</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=014725&appealcode=GSG6O">Miami-Dade Chapter Florida Nursery, Growers and Landscape Association-TREC Research Endowment</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=018785&appealcode=GSG6O">Dr. Robert McMillan Excellence in Plant Pathology Fund</a></li>'>Tropical REC (Homestead)</option>
+				   
+  <option value = '<li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=001079&appealcode=GSG6O">West Florida Research and Education Center General Fund</a></li>
+  				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=014693&appealcode=GSG6O">Directors Excellence Fund</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=013547&appealcode=GSG6O">Martin Glasser Memorial Scholarship</a></li>
+    			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=014105&appealcode=GSG6O">Hatfield Faculty Research Fund</a></li>'>West Florida REC (Milton)</option>
+</select>
+</form>
+<ul id="research_list"></ul>
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script>
+$( "#funds" ).keyup(function() {
+  	if($('#funds').val() === ""){
+      	document.getElementById("funds_list").innerHTML = "";
+      	return;
+  	}
+  	var fundsArray = document.getElementsByTagName("option");
+  	var htmlValue = "";
+	var tempArray;
+  	for (i = 0; i < fundsArray.length; i++) { 
+      	if(fundsArray[i].getAttribute("value") === "0"){
+          	continue;
+       	}
+      	//if(fundsArray[i].textContent.toLowerCase().indexOf($('#funds').val().toLowerCase()) !== -1){
+      	if(fundsArray[i].value.toLowerCase().indexOf($('#funds').val().toLowerCase()) !== -1){
+            if(fundsArray[i].value.indexOf('</li>') !== -1){
+                tempArray = fundsArray[i].value.split('</li>');
+                for(j = 0; j < tempArray.length; j++) { 
+                    if(tempArray[j].toLowerCase().indexOf($('#funds').val().toLowerCase()) !== -1){
+                        htmlValue += tempArray[j];
+                    }
+                }
+            }
+            else{
+                htmlValue += fundsArray[i].getAttribute("value");
+            }
+      	}
+    }
+  	document.getElementById("funds_list").innerHTML = htmlValue;
+});
+
+document.getElementById("research_select").onchange = function(){
+  	var listElement = document.getElementById("research_list");
+  	listElement.innerHTML = "";
+  	var htmlValue = this.getElementsByTagName("option")[this.selectedIndex].getAttribute("value");
+  	
+  	if(htmlValue === "0"){
+      	listElement.innerHTML = "";
+      	return;
+  	}
+  	var newListElement = document.createElement("li");
+  	listElement.appendChild(newListElement);
+  	newListElement.innerHTML = htmlValue;
+};
+</script>
+
+
+  </div>
+    
+    <!--End Left Column-->
