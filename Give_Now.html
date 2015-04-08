@@ -78,11 +78,14 @@
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script>
 $( "#funds" ).keyup(function() {
-  	if($('#funds').val() === ""){
-      	document.getElementById("funds_list").innerHTML = "";
+  	search(this, document.getElementById("funds_list"));
+});
+function search(input, ouputElement){
+	if($(input).val() === ""){
+      	ouputElement.innerHTML = "";
       	return;
   	}
-  	var fundsArray = document.getElementsByTagName("option");
+  	var fundsArray = document.getElementsByTagName("option");//*************change document************
   	var htmlValue = "";
 	var tempArray;
   	for (i = 0; i < fundsArray.length; i++) { 
@@ -90,11 +93,11 @@ $( "#funds" ).keyup(function() {
           	continue;
        	}
       	//if(fundsArray[i].textContent.toLowerCase().indexOf($('#funds').val().toLowerCase()) !== -1){
-      	if(fundsArray[i].value.toLowerCase().indexOf($('#funds').val().toLowerCase()) !== -1){
+      	if(fundsArray[i].value.toLowerCase().indexOf($(input).val().toLowerCase()) !== -1){
             if(fundsArray[i].value.indexOf('</li>') !== -1){
                 tempArray = fundsArray[i].value.split('</li>');
                 for(j = 0; j < tempArray.length; j++) { 
-                    if(tempArray[j].toLowerCase().indexOf($('#funds').val().toLowerCase()) !== -1){
+                    if(tempArray[j].toLowerCase().indexOf($(input).val().toLowerCase()) !== -1){
                         htmlValue += tempArray[j];
                     }
                 }
@@ -104,8 +107,8 @@ $( "#funds" ).keyup(function() {
             }
       	}
     }
-  	document.getElementById("funds_list").innerHTML = htmlValue;
-});
+  	ouputElement.innerHTML = htmlValue;
+}
 
 document.getElementById("research_select").onchange = function(){
   	var listElement = document.getElementById("research_list");
