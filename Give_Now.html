@@ -11,8 +11,8 @@
 </form>
 <ul id="funds_list"></ul>
 <h4>Areas of Greatest Need</h4>
-<form id="research_form">
-<select id="research_select">
+<form>
+<select id="greatest_need">
   <option selected="selected" value = "0">Please Select</option>
   <option value = '<li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=017147&appealcode=GSG6O">IFAS Florida Excellence Endowment</a></li>'>IFAS Florida Excellence Endowment</option>
   <option value = '<li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=017971&appealcode=GSG6O">College of Agricultural and Life Sciences</a></li>'>College of Agricultural and Life Sciences</option>
@@ -73,19 +73,16 @@
     			   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=014105&appealcode=GSG6O">Hatfield Faculty Research Fund</a></li>'>West Florida REC (Milton)</option>
 </select>
 </form>
-<ul id="research_list"></ul>
+<ul id="greatest_need_list"></ul>
 
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script>
 $( "#funds" ).keyup(function() {
-  	search(this, document.getElementById("funds_list"));
-});
-function search(input, ouputElement){
-	if($(input).val() === ""){
-      	ouputElement.innerHTML = "";
+  	if($(this).val() === ""){
+      	document.getElementById("funds_list").innerHTML = "";
       	return;
   	}
-  	var fundsArray = document.getElementsByTagName("option");//*************change document************
+  	var fundsArray = document.getElementsByTagName("option");
   	var htmlValue = "";
 	var tempArray;
   	for (i = 0; i < fundsArray.length; i++) { 
@@ -93,11 +90,11 @@ function search(input, ouputElement){
           	continue;
        	}
       	//if(fundsArray[i].textContent.toLowerCase().indexOf($('#funds').val().toLowerCase()) !== -1){
-      	if(fundsArray[i].value.toLowerCase().indexOf($(input).val().toLowerCase()) !== -1){
+      	if(fundsArray[i].value.toLowerCase().indexOf($('#funds').val().toLowerCase()) !== -1){
             if(fundsArray[i].value.indexOf('</li>') !== -1){
                 tempArray = fundsArray[i].value.split('</li>');
                 for(j = 0; j < tempArray.length; j++) { 
-                    if(tempArray[j].toLowerCase().indexOf($(input).val().toLowerCase()) !== -1){
+                    if(tempArray[j].toLowerCase().indexOf($('#funds').val().toLowerCase()) !== -1){
                         htmlValue += tempArray[j];
                     }
                 }
@@ -107,22 +104,24 @@ function search(input, ouputElement){
             }
       	}
     }
-  	ouputElement.innerHTML = htmlValue;
-}
+  	document.getElementById("funds_list").innerHTML = htmlValue;
+});
 
-document.getElementById("research_select").onchange = function(){
-  	var listElement = document.getElementById("research_list");
+function dropdownList(selectElement, listElement){
   	listElement.innerHTML = "";
-  	var htmlValue = this.getElementsByTagName("option")[this.selectedIndex].getAttribute("value");
+  	var htmlValue = selectElement.getElementsByTagName("option")[selectElement.selectedIndex].getAttribute("value");
   	
   	if(htmlValue === "0"){
       	listElement.innerHTML = "";
       	return;
   	}
-  	var newListElement = document.createElement("li");
-  	listElement.appendChild(newListElement);
-  	newListElement.innerHTML = htmlValue;
-};
+  	listElement.innerHTML = htmlValue;
+}
+$("#greatest_need").change(function(){	
+  	dropdownList(document.getElementById("greatest_need"), document.getElementById("greatest_need_list"));
+});
+
+
 </script>
 
 
