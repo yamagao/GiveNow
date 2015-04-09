@@ -369,6 +369,25 @@
 </form>
 <ul id="extension_list"></ul>
 
+<h4>Other Areas of Interest</h4>
+<form>
+<select id="other">
+  <option selected="selected" value = "0">Please Select</option>
+  <option value = '<li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=005107&appealcode=GSG6O">Wedgworth Leadership Institute</a></li>'>Wedgworth Leadership Institute</option>
+  <option value = '<li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=004695&appealcode=GSG6O">Florida Medical Entomology Lab</a></li>'>Florida Medical Entomology Lab</option>
+  <option value = '<li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=007535&appealcode=GSG6O">Plant Science Research and Education Unit at Citra</a></li>'>Plant Science Research and Education Unit at Citra</option>
+  <option value = '<li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=003773&appealcode=GSG60">Alumni and Friends-CALS</a></li>
+				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=017971&appealcode=GSG60">CALS Florida Fund</a></li>
+				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=016277&appealcode=GSG60">FAWN-Florida Automated Weather Network</a></li>
+				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=001383&appealcode=GSG60">Geomatics Support Fund</a></li>
+				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=018927&appealcode=GSG60">Limagrain Challenge 2050 Project Fund</a></li>
+				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=018879&appealcode=GSG60">Mosaic 4R Stewardship</a></li>
+				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=012187&appealcode=GSG60">Project Learning Tree</a></li>
+				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=016889&appealcode=GSG60">Southern Cone Conservation Leadership Fund</a></li>'>Non-endowed Funds</option>
+</select>
+</form>
+<ul id="other_list"></ul>
+
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script>
 $( "#funds" ).keyup(function() {
@@ -422,6 +441,9 @@ $("#research").change(function(){
 });
 $("#extension").change(function(){	
   	dropdownList(document.getElementById("extension"), document.getElementById("extension_list"));
+});
+$("#other").change(function(){	
+  	dropdownList(document.getElementById("other"), document.getElementById("other_list"));
 });
 </script>
 
