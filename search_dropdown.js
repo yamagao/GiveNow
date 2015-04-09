@@ -29,15 +29,21 @@ $( "#funds" ).keyup(function() {
 });
 
 function dropdownList(selectElement, listElement){
-  	listElement.innerHTML = "";
-  	var htmlValue = selectElement.getElementsByTagName("option")[selectElement.selectedIndex].getAttribute("value");
-  	
+  	var htmlValue = selectElement.getElementsByTagName("option")[selectElement.selectedIndex].getAttribute("value"); 	
   	if(htmlValue === "0"){
       	listElement.innerHTML = "";
       	return;
   	}
+	var selectArray = document.getElementsByTagName("select");
+	for (i = 0; i < selectArray.length; i++) {
+		if(selectArray[i] === selectElement)
+			continue;
+		selectArray[i].selectedIndex = 0;
+		selectArray[i].parentNode.nextElementSibling.innerHTML = "";
+	}
   	listElement.innerHTML = htmlValue;
 }
+
 $("#greatest_need").change(function(){	
   	dropdownList(document.getElementById("greatest_need"), document.getElementById("greatest_need_list"));
 });
