@@ -16,7 +16,8 @@ $( "#funds" ).keyup(function() {
                 tempArray = fundsArray[i].value.split('</li>');
                 for(j = 0; j < tempArray.length; j++) { 
                     if(tempArray[j].toLowerCase().indexOf($('#funds').val().toLowerCase()) !== -1){
-                        htmlValue += tempArray[j].replace("<ul>","");
+                        var content2add = tempArray[j].replace("<li>", "<li style='list-style-type: none;'>");  
+                      	htmlValue += content2add.replace("<ul>", "");
                     }
                 }
             }
