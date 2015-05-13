@@ -16,7 +16,7 @@ $( "#funds" ).keyup(function() {
                 tempArray = fundsArray[i].value.split('</li>');
                 for(j = 0; j < tempArray.length; j++) { 
                     if(tempArray[j].toLowerCase().indexOf($('#funds').val().toLowerCase()) !== -1){
-                        htmlValue += tempArray[j];
+                        htmlValue += tempArray[j].replace("<ul>","");
                     }
                 }
             }
