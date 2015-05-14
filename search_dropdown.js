@@ -30,7 +30,19 @@ $( "#funds" ).keyup(function() {
 });
 
 function dropdownList(selectElement, listElement){
-  	var htmlValue = selectElement.getElementsByTagName("option")[selectElement.selectedIndex].getAttribute("value"); 	
+  	var htmlValue = "";
+  	if(selectElement.id === "research"){
+      	if(selectElement.selectedIndex > 3 && selectElement.selectedIndex < 7){
+          	htmlValue += selectElement.getElementsByTagName("option")[3].getAttribute("value");
+      	}
+      	if(selectElement.selectedIndex > 7 && selectElement.selectedIndex < 12){
+          	htmlValue += selectElement.getElementsByTagName("option")[7].getAttribute("value");
+      	}
+      	if(selectElement.selectedIndex > 12){
+          	htmlValue += selectElement.getElementsByTagName("option")[12].getAttribute("value");
+      	}
+  	}
+  	htmlValue += selectElement.getElementsByTagName("option")[selectElement.selectedIndex].getAttribute("value"); 	
   	if(htmlValue === "0"){
       	listElement.innerHTML = "";
       	return;
@@ -41,7 +53,7 @@ function dropdownList(selectElement, listElement){
 			continue;
 		selectArray[i].selectedIndex = 0;
 		selectArray[i].parentNode.nextElementSibling.innerHTML = "";
-	}
+	}	
   	listElement.innerHTML = htmlValue;
 }
 
