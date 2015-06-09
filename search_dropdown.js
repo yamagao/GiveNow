@@ -1,3 +1,7 @@
+$( document ).ready(function() {
+    $("select").val("0");
+});
+
 $( "#funds" ).keyup(function() {
   	if($(this).val() === ""){
       	document.getElementById("funds_list").innerHTML = "";
@@ -16,8 +20,8 @@ $( "#funds" ).keyup(function() {
                 tempArray = fundsArray[i].value.split('</li>');
                 for(j = 0; j < tempArray.length; j++) { 
                     if(tempArray[j].toLowerCase().indexOf($('#funds').val().toLowerCase()) !== -1){
-                        var content2add = tempArray[j].replace("<li>", "<li style='list-style-type: none;'>");  
-                      	htmlValue += content2add.replace("<ul>", "");
+                      var content2add = tempArray[j].replace("<li>", "<li style='list-style-type: none;'>");  
+                      htmlValue += content2add.replace("<ul>", "");
                     }
                 }
             }
@@ -42,7 +46,7 @@ function dropdownList(selectElement, listElement){
           	htmlValue += selectElement.getElementsByTagName("option")[12].getAttribute("value");
       	}
   	}
-  	htmlValue += selectElement.getElementsByTagName("option")[selectElement.selectedIndex].getAttribute("value"); 	
+  	htmlValue += selectElement.getElementsByTagName("option")[selectElement.selectedIndex].getAttribute("value");
   	if(htmlValue === "0"){
       	listElement.innerHTML = "";
       	return;
@@ -52,8 +56,10 @@ function dropdownList(selectElement, listElement){
 		if(selectArray[i] === selectElement)
 			continue;
 		selectArray[i].selectedIndex = 0;
+      	//alert(selectArray[i].parentNode.nextElementSibling.tagName);
 		selectArray[i].parentNode.nextElementSibling.innerHTML = "";
-	}	
+	}
+	//listElement.innerHTML = "";  	
   	listElement.innerHTML = htmlValue;
 }
 
