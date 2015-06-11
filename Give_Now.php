@@ -70,16 +70,16 @@
   <option value = '<li style=" list-style-type: none;"><h6><a href="http://give.ifas.ufl.edu/nfrec-giving/">View All North Florida REC Giving &nbsp;&rarr;</a></h6></li>
   				   <?php
                     ob_start();
-                    include ("../rcrec-giving/index.php");
+                    include ("../nfrec-giving/index.php");
                     ob_end_clean();                    
-                    echo $GLOBALS['rcrec-giving']; ?>'>&nbsp;&nbsp;North Florida REC (Marianna, Quincy)</option>
+                    echo $GLOBALS['nfrec-giving']; ?>'>&nbsp;&nbsp;North Florida REC (Marianna, Quincy)</option>
 				   
   <option value = '<li style=" list-style-type: none;"><h6><a href="http://give.ifas.ufl.edu/rcrec-giving/">View All Range Cattle REC Giving &nbsp;&rarr;</a></h6></li>
   				   <?php
                     ob_start();
-                    include ("../nfrec-giving/index.php");
+                    include ("../rcrec-giving/index.php");
                     ob_end_clean();                    
-                    echo $GLOBALS['nfrec-giving']; ?>'>&nbsp;&nbsp;Range Cattle REC (Ona)</option>
+                    echo $GLOBALS['rcrec-giving']; ?>'>&nbsp;&nbsp;Range Cattle REC (Ona)</option>
 				   
   <option value = '<li style=" list-style-type: none;"><h6><a href="http://give.ifas.ufl.edu/swfrec-giving/">View All Southwest Florida REC Giving &nbsp;&rarr;</a></h6></li>
   				   <?php
@@ -209,15 +209,17 @@
 <select id="research">
   <option selected="selected" value = "0">Please Select</option>
   <option value = '<li style=" list-style-type: none;"><h6><a href="http://give.ifas.ufl.edu/citrus-giving/">View All Citrus Giving &nbsp;&rarr;</a></h6></li>
-                   <ul>
-                   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=001767&appealcode=GSG6O">Charles M. Shinn, Jr. Endowment for Citrus Research</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=018747&appealcode=GSG6O">Marjorie G. Riley Citrus Research Endowment</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=003145&appealcode=GSG6O">Hunt Bros Endowment for Fellowship in Citrus Research & Education Lake Alfred</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=018807&appealcode=GSG6O">C.D. Hughes and Sons Research Endowment</a></li></ul>'>Citrus</option>
+                   <?php
+                    ob_start();
+                    include ("../citrus-giving/index.php");
+                    ob_end_clean();                    
+                    echo $GLOBALS['citrus-giving']; ?>'>Citrus</option>
   <option value = '<li style=" list-style-type: none;"><h6><a href="http://give.ifas.ufl.edu/insects-giving/">View All Insects Giving &nbsp;&rarr;</a></h6></li>
-                   <ul>
-                   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=003083&appealcode=GSG6O">Urban Pest Control Research</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=008085&appealcode=GSG6O">Thomas J. and Jane B. Walker Fund</a></li></ul>'>Insects</option>
+                   <?php
+                    ob_start();
+                    include ("../insects-giving/index.php");
+                    ob_end_clean();                    
+                    echo $GLOBALS['insects-giving']; ?>'>Insects</option>
   <option value = '<li style=" list-style-type: none;"><h6><a href="http://give.ifas.ufl.edu/livestock-giving/">View All Livestock Giving &nbsp;&rarr;</a></h6></li>'>&nbsp;&nbsp;----Livestock----</option>		   
   <option value = '<ul><li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=016155&appealcode=GSG6O">Florida Cattlemens Endowment</a></li>
 				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=014301&appealcode=GSG6O">Harriet B. Weeks Bovine Research Fund</a></li>
@@ -251,32 +253,17 @@
 <select id="extension">
   <option selected="selected" value = "0">Please Select</option>
   <option value = '<li style=" list-style-type: none;"><h6><a href="http://give.ifas.ufl.edu/faculty-support-giving/">View All Faculty Support Giving &nbsp;&rarr;</a></h6></li>
-                   <ul>
-                   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=003285&appealcode=GSG6O">Watkins Professional Improvement Fund</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=005907&appealcode=GSG6O">John and Martha Woeste Professional Award</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=011149&appealcode=GSG6O">Alto and Patrecia Straughn Extension Educational Improvement Fund</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=011759&appealcode=GSG6O">Straughn 4-H Faculty Fellowship</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=013135&appealcode=GSG6O">Florida Association of County Agricultural Agents Educational Scholarship Fund</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=013495&appealcode=GSG6O">Freddie and Ronnie Johnson County Faculty Professional Development Award</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=013837&appealcode=GSG6O">Seymour Goldweber Faculty Fellowship Endowment</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=013839&appealcode=GSG6O">Christine Waddill Faculty Fellowship Endowment</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=013841&appealcode=GSG6O">Arthur Hornsby Faculty Fellowship Endowment</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=013843&appealcode=GSG6O">Master Gardener Faculty Fellowship Endowment</a></li></ul>'>Faculty Support</option>
+                   <?php
+                    ob_start();
+                    include ("../faculty-support-giving/index.php");
+                    ob_end_clean();                    
+                    echo $GLOBALS['faculty-support-giving']; ?>'>Faculty Support</option>
   <option value = '<li style=" list-style-type: none;"><h6><a href="http://give.ifas.ufl.edu/4-h-giving/">View All 4-H Youth Development Giving &nbsp;&rarr;</a></h6></li>
-                   <ul>
-                   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=008507&appealcode=GSG6O">Escambia County 4-H Fund</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=017917&appealcode=GSG6O">Palm Beach County 4-H Endowment Fund</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=006085&appealcode=GSG6O">T. G. Williamson Endowment</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=006385&appealcode=GSG6O">Fred W. and Mabel H. Barber 4-H Endowment</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=008913&appealcode=GSG6O">Florida Rural Rehabilitation Corporation 4-H Scholarship</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=012573&appealcode=GSG6O">L. E. "Red" Larson 4-H Endowment</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=013531&appealcode=GSG6O">Boyd Family Endowment</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=014661&appealcode=GSG6O">Raymond E. and Karola M. Passage IFAS/4-H Endowment</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=014995&appealcode=GSG6O">William and Jane Groot-Camp Cloverleaf Endowed Fund</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=017133&appealcode=GSG6O">Colleen W. McCreary Florida 4-H Scholarship</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=019051&appealcode=GSG6O">Dr. Joe and Elta Busby 4-H Endowment</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=019147&appealcode=GSG6O">Wilmer W. and Melda H. Bassett 4-H Fund</a></li>
-				   <li><a href="https://www.uff.ufl.edu/OnlineGiving/FundDetail.asp?FundCode=018783&appealcode=GSG60">Florida 4-H Clover Society</a></li></ul>'>4-H Youth Development</option>
+                   <?php
+                    ob_start();
+                    include ("../4-h-giving/index.php");
+                    ob_end_clean();                    
+                    echo $GLOBALS['4-h-giving']; ?>'>4-H Youth Development</option>
 </select>
 </form>
 <ul id="extension_list"></ul>
